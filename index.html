@@ -4,19 +4,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>Hello, I am Trae Dandridge</title>
-    </head>
+       <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      </head>
     <body>
-        <nav>
+    <header>
+      <span class="logo">My WebSite</span>
+      <a id="toggleMenu">Menu<a>
+      <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-
+    </header>
+    <main>
         <h1>Hello, I am Trae Dandridge</h1>
-        <img style="border-radius: 50%; float: right; margin-right: 1em;" src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" alt="My Avatar">
+        <img src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" alt="My Avatar">
         <p> Welcome to my webpage! I am a 24 year old man currently living in East Chicago Indiana.</p>
-        
+    </main>
+    <script>
+
+      var toggleMenu = document.getElementById('toggleMenu');
+      var nav = document.querySelector('nav');
+      toggleMenu.addEventListener(
+        'click',
+        function(){
+          if(nav.style.display=='block'){
+            nav.style.display='none';
+          }else{
+            nav.style.display='block';
+          }
+        }
+      );
+    </script>
     </body>
 </html>

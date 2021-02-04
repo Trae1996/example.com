@@ -3,16 +3,22 @@
     <head>
       <meta charset="UTF-8">
        <title>Trae Dandridge</title>
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+      </head>
     <body>
+      <header>
+        <span class="logo">My WebSite</span>
+        <a id="toggleMenu">Menu<a></a>
         <nav>
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-          </nav>
+        </nav>
+    </header>
+
           <main role="main">
             <section>
               <h1>Trae Dandridge</h1>
@@ -74,7 +80,22 @@
                 <strong>Career Certificate:Computer Programing</strong> 
               </section> 
           </section>
-            </main>        
+            </main>  
+            <script>
+
+              var toggleMenu = document.getElementById('toggleMenu');
+              var nav = document.querySelector('nav');
+              toggleMenu.addEventListener(
+                'click',
+                function(){
+                  if(nav.style.display=='block'){
+                    nav.style.display='none';
+                  }else{
+                    nav.style.display='block';
+                  }
+                }
+              );
+            </script>
     </body>
 </div>
 </html>
