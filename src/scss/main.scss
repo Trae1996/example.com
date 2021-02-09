@@ -57,7 +57,8 @@ header {
     margin: 0 auto;
   
     /* Set the width of the content */
-    width: 960px;
+    width: 50%;
+    padding: 10px;
   
     /* For smaller screens to not exceed the max screen width */
     max-width: 100%;
@@ -90,4 +91,13 @@ header {
         display: block;
         border-bottom: 1px solid #777;
       }
+    }
+
+    ul.a {
+      list-style-type: circle;
+    columns: 2;
+    }
+
+    ul.b{
+      list-style-type: none;
     }
